@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="style.css" rel="stylesheet">
+	<script src="script.js">
+	</script>
+	<title></title>
+</head>
+<body>
+	<form action="#" id="form" onsubmit="formCheck()" name="form">
+		<label for="name">Name</label>
+		<input name="textname" type="text" minlength="3" pattern="^[
+		a-zA-Z]+$" required><br>
+		<label for="sex">Sex</label>
+		<input name="sex" value="male" type="radio" required>M
+		<input name="sex" value="female" type="radio" required>F<br>
+		<label for="number">Number</label>
+		<input name="number" type="text" minlength="12" maxlength="12" pattern="^[0-9]+$" required><br>
+		<label for="date">Birth Date:</label>
+		<input name="date" type="date" required><br>
+		<label for="name">Photo</label>
+		<input type="file" required><br>
+		<label for="name">Password</label>
+		<input name="pass" type="password" minlength="8" pattern="^[а-яА-ЯёЁa-zA-Z0-9]+$" required><br>
+		<input type="submit">
+		<input type="reset">
+	</form>
+	<div id="errorBlock"></div>
+</body>
+</html>
